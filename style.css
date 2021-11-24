@@ -1,0 +1,186 @@
+body {
+  background-color: #011627;
+  background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: white;
+  height: 100px;
+}
+
+#nav .sub-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30%;
+  height: 90%;
+}
+
+#nav a {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  border-radius: 25px;
+  padding: 3%;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+}
+
+#nav a:hover {
+  color: white;
+  text-decoration: none;
+  background: rgba(167, 167, 167, 0.666);
+  -webkit-transition: background 0.4s ease;
+  transition: background 0.4s ease;
+  -webkit-transition: color 0.4s ease;
+  transition: color 0.4s ease;
+}
+
+#nav .active {
+  color: white;
+  text-decoration: none;
+  background: rgba(167, 167, 167, 0.666);
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+#nav .alien {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: perspective(1000px);
+          transform: perspective(1000px);
+  background: #43d2cc;
+  background: -webkit-gradient(linear, left top, right top, from(#43d2cc), color-stop(96%, #5ba847));
+  background: linear-gradient(90deg, #43d2cc 0%, #5ba847 96%);
+  margin-top: 1%;
+  height: 350px;
+  width: 200px;
+  max-height: 250px;
+  -webkit-clip-path: ellipse(38% 48% at 50% 51%);
+  clip-path: ellipse(38% 48% at 50% 51%);
+}
+
+#nav .alien .tattoo {
+  width: 35%;
+  margin: 10% 0% 0% 33%;
+}
+
+#nav .alien .mouth {
+  position: absolute;
+  width: 20%;
+  height: 20px;
+  bottom: 20%;
+  border-bottom: 2px solid #4f4f4f;
+  border-radius: 0px 0px 5px 5px;
+  left: 40%;
+}
+
+#nav .alien .nose {
+  height: 3px;
+  position: absolute;
+  width: 3px;
+  background: #4f4f4f;
+  left: 46%;
+  bottom: 30%;
+  border-radius: 50%;
+}
+
+#nav .alien .nose.right {
+  left: 51%;
+}
+
+#nav .alien .eyes {
+  display: block;
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  text-align: center;
+  height: 30%;
+  width: 90%;
+  margin-left: 5%;
+}
+
+#nav .alien .eyes .eye {
+  width: 35%;
+  max-width: 95px;
+  height: 100%;
+  background: #fff;
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  -webkit-clip-path: ellipse(55% 40% at 50% 60%);
+  clip-path: ellipse(55% 40% at 50% 60%);
+}
+
+#nav .alien .eyes .alien-eyelid {
+  background: #3f9864;
+  width: 103%;
+  height: 65%;
+  position: absolute;
+  bottom: 115%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#nav .alien .eyes .alien-eyelid.bottom {
+  background: #49a06d;
+  bottom: -20%;
+}
+
+#nav .alien .eyes .ball {
+  width: 30px;
+  height: 30px;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 10px solid #9381ff;
+}
+
+main .hero {
+  color: white;
+  background: #9f9f9f73;
+  border-radius: 25px;
+  margin-top: 250px;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+}
+
+main h1 {
+  line-height: 4rem;
+}
+
+main .hero:hover {
+  background: #9f9f9fdb;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+}
+/*# sourceMappingURL=style.css.map */

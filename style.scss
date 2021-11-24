@@ -1,0 +1,162 @@
+body {
+    background-color: #011627;
+    background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    height: 100px;
+
+    .sub-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-self: center;
+        align-items: center;
+        width: 30%;
+        height: 90%;
+    }
+
+    a {
+        color: rgba(255, 255, 255, 0.75);
+        text-decoration: none;
+        transition: color 0.3s ease;
+        border-radius: 25px;
+        padding: 3%;
+        transition: background 0.3s ease;
+
+        &:hover {
+            color: white;
+            text-decoration: none;
+            background: rgba(167, 167, 167, 0.666);
+            transition: background 0.4s ease;
+            transition: color 0.4s ease;
+        }
+    }
+
+    .active {
+        color: white;
+        text-decoration: none;
+        background: rgba(167, 167, 167, 0.666);
+        transition: background 0.3s ease;
+        transition: color 0.3s ease;
+    }
+
+    .alien {
+        transform-style: preserve-3d;
+        transform: perspective(1000px);
+
+        background: rgb(67, 210, 204);
+        background: linear-gradient(90deg, rgba(67, 210, 204, 1) 0%, rgba(91, 168, 71, 1) 96%);
+
+        margin-top: 1%;
+        height: 350px;
+        width: 200px;
+        max-height: 250px;
+
+        -webkit-clip-path: ellipse(38% 48% at 50% 51%);
+        clip-path: ellipse(38% 48% at 50% 51%);
+
+        .tattoo {
+            width: 35%;
+            margin: 10% 0% 0% 33%;
+        }
+        .mouth {
+            position: absolute;
+            width: 20%;
+            height: 20px;
+            bottom: 20%;
+            border-bottom: 2px solid rgb(79, 79, 79);
+            border-radius: 0px 0px 5px 5px;
+            left: 40%;
+        }
+
+        .nose {
+            height: 3px;
+            position: absolute;
+            width: 3px;
+            background: rgb(79, 79, 79);
+            left: 46%;
+            bottom: 30%;
+            border-radius: 50%;
+        }
+
+        .nose.right {
+            left: 51%;
+        }
+
+        .eyes {
+            display: block;
+            position: absolute;
+            top: 35%;
+            width: 100%;
+            text-align: center;
+
+            height: 30%;
+            width: 90%;
+            margin-left: 5%;
+
+            .eye {
+                width: 35%;
+                max-width: 95px;
+                height: 100%;
+                background: #fff;
+                display: inline-block;
+                border-radius: 50%;
+                position: relative;
+                overflow: hidden;
+
+                -webkit-clip-path: ellipse(55% 40% at 50% 60%);
+                clip-path: ellipse(55% 40% at 50% 60%);
+            }
+
+            .alien-eyelid {
+                background: #3f9864;
+                width: 103%;
+                height: 65%;
+                position: absolute;
+                bottom: 115%;
+                transform: translate(-50%, -50%);
+            }
+
+            .alien-eyelid.bottom {
+                background: #49a06d;
+                bottom: -20%;
+            }
+
+            .ball {
+                width: 30px;
+                height: 30px;
+                background: #000;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                border-radius: 50%;
+                border: 10px solid #9381ff;
+            }
+        }
+    }
+}
+
+main {
+    .hero {
+        color: white;
+        background: #9f9f9f73;
+        border-radius: 25px;
+        margin-top: 250px;
+        transition: background 0.3s ease;
+    }
+    h1 {
+        line-height: 4rem;
+    }
+
+    .hero:hover {
+        background: #9f9f9fdb;
+        transition: background 0.3s ease;
+    }
+}
